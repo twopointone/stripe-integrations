@@ -1,0 +1,51 @@
+# Poetry Ref: https://python-poetry.org/docs/pyproject/
+[tool.poetry]
+name = "stripe-integrations"
+version = "0.0.1"
+description = "Django + Stripe made easy"
+authors = ["Two Point One < oss@twopointone.com >"]
+maintainers = [
+    "Vikalp Jain <vikalp@twopointone.com>",
+    "Vaibhav Sahu <vaibhav@twopointone.com>",
+    "Purnendu Kar <purnendu@twopointone.com>",
+]
+license = "MIT"
+
+readme = "README.md"
+packages = [
+    { include = "stripe_integrations", from = "src" }
+]
+
+homepage = "https://twopointone.github.io/stripe-integrations"
+repository = "https://github.com/twopointone/stripe-integrations"
+documentation = "https://twopointone.github.io/stripe-integrations"
+
+keywords = ["stripe-integrations"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "^3.2.18"
+stripe = "5.2.0"
+
+[tool.poetry.dev-dependencies]
+bump2version = "^1.0.1"
+pre-commit = "^2.19.0"
+flake8 = "^5.0.4"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+mkdocs = "^1.3.0"
+mkdocs-material = "^8.3.8"
+mkdocs-material-extensions = "^1.0.3"
+
+[build-system]
+requires = ["poetry-core>=1.4.0"]
+build-backend = "poetry.core.masonry.api"

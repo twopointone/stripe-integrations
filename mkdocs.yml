@@ -1,0 +1,30 @@
+site_name: Stripe Integrations
+
+theme:
+  name: material
+
+nav:
+  - Overview: index.md
+  - Quickstart: library/quickstart.md
+  - Models: library/models.md
+  - Actions:
+    - Customer: library/actions/customers.md
+    - Card: library/actions/cards.md
+    - Subscription: library/actions/subscriptions.md
+    - Product: library/actions/products.md
+    - Price: library/actions/prices.md
+    - Coupon: library/actions/coupons.md
+    - Event: library/actions/events.md
+    - Webhook: library/actions/webhooks.md
+  - Management Commands: library/management_commands.md
+  - Webhook: library/webhooks.md
+  - Changelog: changelog.md
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - pymdownx.superfences:
+      preserve_tabs: true
+  - pymdownx.inlinehilite
+  - admonition
